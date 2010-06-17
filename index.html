@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<style type="text/css" media="screen">
+		body 	{ font: 100% helvetica, arial, Verdana, sans-serif; }
+		.hover	{ background-color: #ddd; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.blockify.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(function(){
+			$('.blockify').blockify({
+				selector:'a:first'
+			});
+		});
+	</script>
+	<title>Split Children tests</title>
+	
+</head>
+
+<body>
+
+	<h1>jquery.blockify</h1>
+	
+	<p class="blockify">This <a href="http://elidupuis.com">entire paragraph</a> is made clickable by jquery.blockify. By default the <code>href</code> from last anchor tag is used to determine the destination of a click. In this case I've <a href="http://liftinteractive.com">overridden the default</a> and the first anchor is used instead. All links within the selected element are still functional as standard links and the plugin ignores a <code>mouseup</code> event if text has been selected. giddyup.</p>
+
+	<p>This paragraph is not selected and is therefore left untouched.</p>
+
+	<p class="blockify">This paragraph is selected but is ignored because it contains no links.</p>
+	
+	<h2>defaults / options</h2>
+	
+	<ul>
+		<li><code>selector:'a:last'</code>		//	selector to specific anchor (or other element), in case there's more than one!</li>
+		<li><code>cursor: 'pointer'</code>		//	sets css cursor value. set to false to do nothing</li>
+		<li><code>hoverClass:'hover'</code>		//	class attached to element on hover</li>
+		<li><code>externalClass:'ext'</code>	//	if target anchor has this class, link will be opened in a new window</li>
+	</ul>	
+
+</body>
+</html>
