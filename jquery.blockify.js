@@ -3,7 +3,7 @@
  * Copyright (c) 2010 Eli Dupuis
  * Version: 0.3 (June 16, 2010)
  * Dual licensed under the MIT (http://www.opensource.org/licenses/mit-license.php) and GPL (http://creativecommons.org/licenses/GPL/2.0/) licenses.
- * Requires: jQuery v1.3.2 or later
+ * Requires: jQuery v1.2 or later
  */
 
 (function($) {
