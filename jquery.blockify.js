@@ -34,7 +34,7 @@ jQuery.fn.blockify = function(options) {
 			});			
 		};
 		
-		$this.click(function(e){
+		$this.bind('click', function(e){
 			if (e.target.nodeName.toLowerCase() != 'a') {
 				//	target is not a standard <a> link.
 

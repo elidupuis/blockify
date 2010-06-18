@@ -4,8 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>jquery.blockify</title>
 	<style type="text/css" media="screen">
-		body 	{ font: 100% helvetica, arial, Verdana, sans-serif; }
+		body 	{ font: 100% helvetica, arial, Verdana, sans-serif; margin: auto; width: 600px; }
 		.hover	{ background-color: #ddd; }
 	</style>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -17,21 +18,23 @@
 			});
 		});
 	</script>
-	<title>Split Children tests</title>
-	
 </head>
 
 <body>
 
 	<h1>jquery.blockify</h1>
 	
-	<p class="blockify">This <a href="http://elidupuis.com">entire paragraph</a> is made clickable by jquery.blockify. By default the <code>href</code> from last anchor tag is used to determine the destination of a click. In this case I've <a href="http://liftinteractive.com">overridden the default</a> and the first anchor is used instead. All links within the selected element are still functional as standard links and the plugin ignores a <code>mouseup</code> event if text has been selected. giddyup.</p>
+	<p class="blockify">This <a href="http://elidupuis.com">entire paragraph</a> is made clickable by jquery.blockify. By default the <code>href</code> from last anchor tag is used to determine the destination of a click. In this case I've <a href="http://liftinteractive.com">overridden the default</a> and the first anchor is used instead. All links within the selected element still functional as standard links and the plugin does nothing if text has been selected. giddyup.</p>
 
 	<p>This paragraph is not selected and is therefore left untouched.</p>
 
 	<p class="blockify">This paragraph is selected but is ignored because it contains no links.</p>
 	
-	<h2>defaults / options</h2>
+	<h2>uses</h2>
+	
+	<p>this demo uses paragraph tags, but this plugin can be on any element. i've used it mostly on <code>&lt;li&gt;</code> tags that contain an article snippet with a <em>read more</em> link.</p>
+	
+	<h2>options</h2>
 	
 	<ul>
 		<li><code>selector:'a:last'</code>		//	selector to specific anchor (or other element), in case there's more than one!</li>
