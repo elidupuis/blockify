@@ -1,6 +1,0 @@
-Options:
-
-selector: 'a:last',			//	selector to specific anchor (or other element), in case there's more than one!
-cursor: 'pointer',			//	sets css cursor value. set to false to do nothing
-hoverClass: 'hover',		//	class attached to element on hover
-externalClass: 'ext'		//	if target anchor has this class, link will be opened in a new window

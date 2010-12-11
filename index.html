@@ -11,12 +11,13 @@
 		p, ul 	{ margin: 0 0 1em; }
 		.hover	{ background-color: #ddd; }
 	</style>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	<script src="jquery.blockify.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" charset="utf-8">
 		$(function(){
 			$('.blockify').blockify({
-				selector:'a:first'
+				selector:'a:first',
+				attachment: 'bind'
 			});
 		});
 	</script>
@@ -26,7 +27,7 @@
 
 	<h1>jquery.blockify</h1>
 	
-	<p class="blockify">This <a href="http://elidupuis.com">entire paragraph</a> is made clickable by jquery.blockify. By default the <code>href</code> from last anchor tag is used to determine the destination of a click. In this case I've <a href="http://liftinteractive.com">overridden the default</a> and the first anchor is used instead. All links within the selected element still functional as standard links and the plugin does nothing if text has been selected. giddyup.</p>
+	<p class="blockify">This <a href="http://elidupuis.com">entire paragraph</a> is made clickable by jquery.blockify. By default the <code>href</code> from last anchor tag is used to determine the destination of a click. In this case I've <a href="http://liftinteractive.com">overridden the default</a> and the first anchor is used instead. All links within the selected element still functional as standard links and the plugin does nothing if text has been selected. giddyup. also, <a href="#">this is an internal link</a> and <a href="#test">another one</a> for good measure</p>
 
 	<p>This paragraph is not selected and is therefore left untouched.</p>
 
@@ -46,7 +47,7 @@
 	</ul>
 	
 	<h2>download</h2>
-	<p><a href="http://github.com/elidupuis/blockify/">download source from github &rarr;</p>
+	<p><a href="http://github.com/elidupuis/blockify/">download source from github &rarr;</a></p>
 
 </body>
 </html>
