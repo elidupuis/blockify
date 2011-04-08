@@ -11,6 +11,7 @@ h2. Options:
 * cursor: 'pointer',			//	sets css cursor value. set to false to do nothing.
 * hoverClass: 'hover',		//	class attached to element on hover for styling purposes.
 * externalClass: 'ext'		//	if target anchor has this class, link will be opened in a new window.
+* ignore: 'a, input, textarea, label, button'   //  clicking on these elements will not trigger the selected link.
 
 
 h2. Features
