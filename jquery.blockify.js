@@ -40,8 +40,8 @@
   		};
 
   		$this.bind( 'click', function( e ) {
-        if ( $.inArray( e.target.nodeName.toLowerCase(), ['a', 'input', 'textarea'] ) === -1) {
-  				//	target is not a standard <a> link.
+  		  //  take into account elements in the ignore list:
+        if ( $(e.target).not(opts.ignore).length > 0 ) {
 
   				//	make sure no text has been selected:
   				if($.fn.blockify.getSelectedText() == "") {
@@ -63,7 +63,8 @@
   	selector: 'a:last',			//	selector to specific anchor to be used when parent is clicked.
   	cursor: 'pointer',			//	sets css cursor value. set to false to do nothing.
   	hoverClass: 'hover',		//	class attached to element on hover for styling purposes.
-  	externalClass: 'ext'		//	if target anchor has this class, link will be opened in a new window.
+  	externalClass: 'ext',		//	if target anchor has this class, link will be opened in a new window.
+  	ignore: 'a, input, textarea, label, button'   //  clicking on these elements will not trigger the selected link.
   };
 
   $.fn.blockify.getSelectedText = function(){
