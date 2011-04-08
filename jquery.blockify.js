@@ -40,7 +40,7 @@
   		};
 
   		$this.bind( 'click', function( e ) {
-        if (e.target.nodeName.toLowerCase() !== 'a') {
+        if ( $.inArray( e.target.nodeName.toLowerCase(), ['a', 'input', 'textarea'] ) === -1) {
   				//	target is not a standard <a> link.
 
   				//	make sure no text has been selected:
