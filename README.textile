@@ -1,8 +1,8 @@
 h1. jQuery.blockify
 
-This plugin can be used to make any element clickable based on a child anchor. It is, in essence, the same as HTML5's ability to wrap <a> tags around block elements.
+This plugin can be used to make any element clickable based on a child anchor. It is, in essence, the same as HTML5's ability to wrap anchor tags around block elements.
 
-You can have multiple links inside the container element that will act as normal anchor tags as you can specify which links anchor is to be used when the parent is clicked.   
+You can have multiple links inside the container element that will act as normal anchor tags as you can specify which links anchor is to be used when the parent is clicked. You can also easily ignore form elements (or anything else).
 
 
 h2. Options:
@@ -17,7 +17,8 @@ h2. Options:
 h2. Features
 
 * allows you to specify the dominant anchor within a block, in case there's a conflict.
+** allows you to ignore any other elements, such of textareas or text inputs.
+* accounts for occasion of user selecting text and does not follow link in such a situation.
 * opens link with a (specified) 'external' class in a new window. equivalent to target="_blank".
 * adds class to element on hover allowing rollover styling.
 * option to use custom cursor on hover.
-* accounts for occasion of user selecting text and does not follow link in such a situation.
